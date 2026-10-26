@@ -1,1 +1,6 @@
-# TODO\n\n- Implement production deployment scripts\n- Add unit tests for server controllers\n- Refactor client state management
+# TODO
+
+- Implement production deployment scripts
+- Add unit tests for server controllers
+- Refactor client state management
+- [x] Remove leftover console.log statements from production code

@@ -21,13 +21,13 @@ const setupSockets = (io) => {
     };
 
     io.on('connection', (socket) => {
-        console.log(`User connected to socket: ${socket.id}`);
+
 
         socket.on('join-room', async ({ roomId, user }) => {
             socket.join(roomId);
             userStore[socket.id] = user; // Map for name tracking
             socketToRoom[socket.id] = roomId;
-            console.log(`User ${user.name} joined room ${roomId}`);
+
 
             broadcastRoomActivity(roomId);
 
@@ -106,7 +106,7 @@ const setupSockets = (io) => {
         });
 
         socket.on('disconnect', () => {
-            console.log(`User disconnected: ${socket.id}`);
+
             const roomId = socketToRoom[socket.id];
             delete userStore[socket.id];
             delete socketToRoom[socket.id];

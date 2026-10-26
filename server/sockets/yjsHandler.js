@@ -51,7 +51,7 @@ export const setupYjs = (server) => {
 
                         if (room && room.yjsState) {
                             Y.applyUpdate(doc, room.yjsState);
-                            console.log(`[Yjs] Hydrated room ${roomName}`);
+
                         }
                     } catch (err) {
                         console.error(`[Yjs] Hydration error for ${roomName}:`, err);
@@ -79,14 +79,14 @@ export const setupYjs = (server) => {
                             { upsert: true }
                         );
 
-                        console.log(`[Yjs] State saved for room ${roomName}`);
+
                     } catch (err) {
                         console.error(`[Yjs] Save error for ${roomName}:`, err);
                     }
                 }, 3000);
             });
 
-            console.log(`[Yjs] Connected to room: ${roomName}`);
+
 
         } catch (err) {
             console.error("[Yjs] Connection error:", err);
