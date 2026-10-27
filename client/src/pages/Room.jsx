@@ -20,7 +20,7 @@
     import BackgroundSelector from '../components/BackgroundSelector';
     import VideoPlayer from '../components/VideoPlayer';
 
-    const SOCKET_URL = import.meta.env.VITE_WS_URL || 'http://localhost:5000';
+    const SOCKET_URL = import.meta.env.VITE_WS_URL || 'http://localhost:5001';
 
     // Custom Konva Image Component to load URLs
     const URLImage = ({ imageProps, isSelected, onSelect, onTransformEnd, remoteGlowProps }) => {
