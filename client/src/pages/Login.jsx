@@ -49,7 +49,7 @@ const Login = () => {
 
     const handleGoogleLogin = () => {
         // Points to your backend port 5000
-        window.location.href = 'http://localhost:5000/api/auth/google';
+        window.location.href = `${import.meta.env.VITE_API_URL}/auth/google`;
     };
 
     return (

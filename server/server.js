@@ -20,6 +20,7 @@ import mediaRoutes from './routes/mediaRoutes.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import setupSockets from './sockets/index.js';
 import { setupYjs } from './sockets/yjsHandler.js';
+import healthRoutes from './routes/healthRoutes.js';
 
 connectDB();
 const app = express();
@@ -30,7 +31,7 @@ app.use(passport.initialize());
 
 // HIGH PRIORITY: Explicitly allow the frontend origin
 app.use(cors({ 
-    origin: 'http://localhost:5173', 
+    origin: process.env.CLIENT_URL || 'http://localhost:5173', 
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 })); 
@@ -43,7 +44,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:5173',
+        origin: process.env.CLIENT_URL || 'http://localhost:5173',
         methods: ['GET', 'POST'],
     },
 });
@@ -58,7 +59,7 @@ app.use('/api/activity', activityRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/media', mediaRoutes);
 
-app.get('/api/health', (req, res) => res.status(200).json({ status: 'ok' }));
+app.use('/api/health', healthRoutes);
 app.get('/', (req, res) => res.send('<h1>CollabCanvas Backend</h1>'));
 
 app.use(errorHandler);

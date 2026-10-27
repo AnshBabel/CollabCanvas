@@ -56,7 +56,7 @@ const Register = () => {
 
     const handleGoogleLogin = () => {
         // Hits the backend endpoint - Passport handles both Login & Register
-        window.location.href = 'http://localhost:5000/api/auth/google';
+        window.location.href = `${import.meta.env.VITE_API_URL}/auth/google`;
     };
 
     return (
