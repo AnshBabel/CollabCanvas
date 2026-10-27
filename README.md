@@ -1,105 +1,147 @@
-# 🎨 CollabCanvas
-> **Real-time collaborative whiteboard, powered by AI** — sketch, plan, and brainstorm together, from anywhere.
+<div align="center">
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-5-000000?logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white) ![Socket.io](https://img.shields.io/badge/Socket.io-Realtime-010101?logo=socket.io&logoColor=white) ![Yjs](https://img.shields.io/badge/Yjs-CRDT-F9A03C) ![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-06B6D4?logo=tailwindcss&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-green)
+# 🎨 CollabCanvas
+
+### Real-time collaborative whiteboard, supercharged with AI
+
+*Sketch, plan, and brainstorm together — live, from anywhere in the world.*
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-5-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Socket.io](https://img.shields.io/badge/Socket.io-Realtime-010101?style=for-the-badge&logo=socket.io&logoColor=white)](https://socket.io/)
+
+[![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?style=flat-square&logo=vite&logoColor=white)]()
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)]()
+[![Yjs](https://img.shields.io/badge/Yjs-CRDT_Sync-F9A03C?style=flat-square)]()
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?style=flat-square&logo=openai&logoColor=white)]()
+[![Google Gemini](https://img.shields.io/badge/Gemini-API-8E75B2?style=flat-square&logo=google&logoColor=white)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)]()
+
+<br/>
+
+**[🚀 Live Demo](#)** · **[📖 Documentation](#-getting-started)** · **[🐛 Report Bug](../../issues)** · **[✨ Request Feature](../../issues)**
+
+</div>
 
 ---
+
 ## 📌 What is CollabCanvas?
 
-**In plain words:** CollabCanvas is like a shared digital whiteboard that you and your team can draw, write, and brainstorm on **together, in real time** — no matter where everyone is sitting. Think of it as a Google Doc, but for sketching ideas, diagrams, and sticky notes — with a built‑in **AI assistant** that can generate diagrams and brainstorm ideas for you automatically.
+> **In plain words:** Imagine a whiteboard on the wall, except everyone on your team can draw, write, and sketch on it at the same time — even if you're all in different cities. CollabCanvas is that whiteboard, online. It even has a built-in **AI assistant** that can turn your typed ideas into diagrams and sticky notes automatically.
 
-**For developers:** CollabCanvas is a full‑stack **MERN** application featuring **CRDT‑based real‑time synchronization (Yjs)**, **WebSocket communication (Socket.io)**, **JWT + OAuth 2.0 authentication**, and **LLM‑powered content generation** (Google Gemini / OpenAI) — architected as a scalable, modular client‑server system.
+> **For developers:** A full-stack **MERN** application showcasing **CRDT-based real-time synchronization** (Yjs), **bidirectional WebSocket communication** (Socket.io), **dual-strategy authentication** (JWT + Google OAuth 2.0), and **LLM-powered content generation** (Gemini & OpenAI) — built with a modular, scalable client-server architecture.
 
----
+<br/>
+
 ## ✨ Features
-- 🔐 **Secure Authentication** — Email/password login with bcrypt hashing + Google OAuth 2.0 social login
-- 🖼️ **Real‑Time Collaborative Canvas** — Multiple users draw, move, and edit elements simultaneously with conflict‑free sync via **Yjs CRDTs**
-- 💬 **Live Room Chat** — Built‑in chat synced per room alongside the canvas
-- 🤖 **AI‑Powered Generation** — Describe an idea in plain text and let AI generate diagrams, flowcharts, or brainstorm sticky notes directly onto the canvas
-- 🏠 **Room Management** — Create, join, rename, archive, restore, and delete collaborative rooms
-- 🖱️ **Live Cursor Presence** — See collaborators' cursors moving in real time
-- 🎨 **Customizable Canvas Backgrounds** — Grid, dotted, solid color, or custom image backgrounds
-- 📁 **Media Uploads** — Upload and embed images directly into your canvas
-- 📊 **Activity Tracking** — Room and workspace activity logs for visibility into team actions
-- 🧩 **Templates** — Quick‑start templates (Agile Board, Wireframing, User Journey Mapping)
 
----
-## 🛠️ Tech Stack
-### Frontend
-| Technology | Purpose |
+| | |
 |---|---|
-| **React 19** | UI library |
-| **Vite** | Build tool & dev server |
-| **Tailwind CSS** | Utility‑first styling |
-| **Zustand** | Lightweight global state management |
-| **React Router** | Client‑side routing |
-| **Yjs + y‑websocket** | CRDT‑based real‑time data sync |
-| **Framer Motion** | UI animations |
-| **Axios** | HTTP client |
+| 🔐 **Secure Authentication** | Email/password with bcrypt hashing + one-click Google OAuth 2.0 login |
+| 🖼️ **Real-Time Collaborative Canvas** | Multiple users draw and edit simultaneously with conflict-free sync via **Yjs CRDTs** |
+| 🤖 **AI-Powered Generation** | Type an idea → AI instantly generates diagrams, flowcharts & brainstorm sticky notes on the canvas |
+| 💬 **Live Room Chat** | Real-time chat synced per room, right alongside the canvas |
+| 🖱️ **Live Cursor Presence** | See every collaborator's cursor move in real time |
+| 🏠 **Room Management** | Create, join, rename, archive, restore & delete collaborative rooms |
+| 🎨 **Custom Canvas Backgrounds** | Grid, dotted, solid color, or custom image backgrounds |
+| 📁 **Media Uploads** | Drop images straight onto your canvas |
+| 🧩 **Smart Templates** | Instant-start templates — Agile Boards, Wireframes, User Journey Maps |
+| 📊 **Activity Tracking** | Full visibility into room and workspace activity logs |
+
+<br/>
+
+## 🛠️ Tech Stack
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### Frontend
+- ⚛️ **React 19** — UI library
+- ⚡ **Vite** — Lightning-fast build tool
+- 🎨 **Tailwind CSS** — Utility-first styling
+- 🐻 **Zustand** — Lightweight global state
+- 🧭 **React Router** — Client-side routing
+- 🔄 **Yjs + y-websocket** — CRDT real-time sync
+- 🎬 **Framer Motion** — Smooth UI animations
+- 📡 **Axios** — HTTP client
+
+</td>
+<td valign="top" width="50%">
 
 ### Backend
-| Technology | Purpose |
-|---|---|
-| **Node.js + Express 5** | REST API server |
-| **MongoDB + Mongoose** | Database & ODM |
-| **Socket.io** | Real‑time bidirectional events (chat, cursors) |
-| **Yjs** | Server‑side CRDT document persistence |
-| **Passport.js** | Google OAuth 2.0 strategy |
-| **JWT (jsonwebtoken)** | Stateless authentication tokens |
-| **bcryptjs** | Password hashing |
-| **Multer** | File/media upload handling |
+- 🟢 **Node.js + Express 5** — REST API server
+- 🍃 **MongoDB + Mongoose** — Database & ODM
+- 🔌 **Socket.io** — Real-time events (chat, cursors)
+- 🔄 **Yjs** — Server-side CRDT persistence
+- 🛡️ **Passport.js** — Google OAuth 2.0 strategy
+- 🔑 **JWT** — Stateless authentication
+- 🔒 **bcryptjs** — Password hashing
+- 📤 **Multer** — File/media upload handling
 
-### AI Integration
+</td>
+</tr>
+</table>
+
+### 🤖 AI Integration
 | Service | Purpose |
 |---|---|
-| **Google Gemini API** | AI diagram & brainstorm generation |
+| **Google Gemini API** | Diagram & brainstorm generation |
 | **OpenAI API** | AI chat & content generation |
 
----
-## 🏗️ Architecture
-```
-┌─────────────────┐          REST API (JSON)          ┌──────────────────┐
-│   React Client  │ ───────────────────────────────▶│  Express Server │
-│ (Vite + Zustand)│ ◀─────────────────────────────── │   (Node.js)     │
-└────────┬─────────┘                                 └─────────┬────────┘
-         │                                                     │
-         │               WebSocket (Socket.io + y‑websocket)   │
-         ▼                                                     ▼
-   ┌─────────────────┐                               ┌──────────────────┐
-   │   Yjs Document  │                               │   MongoDB Atlas  │
-   │ (local CRDT)    │ ◀── persisted as binary ─────▶│ (Rooms, Users,   │
-   └─────────────────┘                               │  Activity logs) │
-                                                      └──────────────────┘
-```
-- **Frontend ↔ Backend:** REST for auth, room CRUD, AI requests, media uploads
-- **Realtime Layer:** Socket.io handles chat & cursor events; Yjs handles canvas state CRDT sync, persisted to MongoDB as binary blobs
-- **AI Layer:** Backend proxies prompts to Google Gemini / OpenAI and returns structured canvas elements
+<br/>
 
----
+## 🏗️ Architecture
+
+```
+┌───────────────────┐        REST API (JSON)        ┌────────────────────┐
+│    React Client    │ ─────────────────────────────▶ │   Express Server    │
+│  (Vite + Zustand)  │ ◀───────────────────────────── │     (Node.js)       │
+└──────────┬─────────┘                                └──────────┬─────────┘
+           │                                                      │
+           │         WebSocket (Socket.io + y-websocket)          │
+           │◀────────────────────────────────────────────────────▶│
+           │                                                      │
+           ▼                                                      ▼
+┌───────────────────┐                                 ┌────────────────────┐
+│    Yjs Document     │                               │   MongoDB Atlas      │
+│ (local CRDT state)  │ ◀──── persisted as binary ───▶│ (Rooms, Users,        │
+└────────────────────┘                                │  Activity Logs)       │
+                                                       └────────────────────┘
+```
+
+- **Frontend ↔ Backend:** REST handles auth, room CRUD, AI requests, and media uploads
+- **Realtime Layer:** Socket.io powers chat & cursor events; Yjs handles canvas CRDT sync, persisted to MongoDB
+- **AI Layer:** Backend proxies prompts to Gemini/OpenAI and returns structured canvas elements
+
+<br/>
+
 ## 🚀 Getting Started
+
 ### Prerequisites
-- Node.js v18+
-- MongoDB (local instance or free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster)
-- Google Cloud OAuth credentials (for Google Sign‑In)
-- Gemini / OpenAI API key (for AI features)
+- Node.js **v18+**
+- MongoDB (local or free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster)
+- Google Cloud OAuth credentials ([setup guide](https://console.cloud.google.com/))
+- Gemini / OpenAI API key
 
 ### Installation
+
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/AnshBabel/CollabCanvas.git
 cd CollabCanvas
 
-# 2. Install backend dependencies
-cd server
-npm install
+# Install backend dependencies
+cd server && npm install
 
-# 3. Install frontend dependencies
-cd ../client
-npm install
+# Install frontend dependencies
+cd ../client && npm install
 ```
 
 ### Environment Setup
-Create a `.env` file in both `server/` and `client/` directories, using the provided templates:
+
 ```bash
 # In server/
 cp .env.example .env
@@ -107,24 +149,31 @@ cp .env.example .env
 # In client/
 cp .env.example .env
 ```
-Fill in the required values (see [Environment Variables](#environment-variables) below).
 
-### Running Locally
+Fill in the required values — see [Environment Variables](#-environment-variables) below.
+
+### Run Locally
+
 ```bash
-# Terminal 1 — Start the backend
+# Terminal 1 — Backend
 cd server
 npm run dev
 
-# Terminal 2 — Start the frontend
-cd ../client
+# Terminal 2 — Frontend
+cd client
 npm run dev
 ```
-Open your browser at the URL shown in the terminal (typically http://localhost:5173).
 
----
+Open your browser at the URL shown in the terminal (typically `http://localhost:5173`) 🎉
+
+<br/>
+
 ## 🔑 Environment Variables
-### server/.env
-```
+
+<details>
+<summary><b>server/.env</b></summary>
+
+```env
 NODE_ENV=
 PORT=
 MONGO_URI=
@@ -135,58 +184,83 @@ GOOGLE_CALLBACK_URL=
 CLIENT_URL=
 GEMINI_API_KEY=
 ```
-### client/.env
-```
+</details>
+
+<details>
+<summary><b>client/.env</b></summary>
+
+```env
 VITE_API_URL=
 VITE_WS_URL=
 VITE_GOOGLE_CLIENT_ID=
 ```
-> ⚠️ Never commit your actual `.env` files. Use `.env.example` as a reference template only.
+</details>
 
----
+> ⚠️ **Never commit your real `.env` files.** Use `.env.example` as a reference template only.
+
+<br/>
+
 ## 📂 Project Structure
+
 ```
 CollabCanvas/
-├── client/            # React + Vite frontend
+├── client/                  # React + Vite frontend
 │   └── src/
-│       ├── components/   # Reusable UI components (Canvas, Chat, Toolbar, etc.)
-│       ├── pages/        # Route‑level pages (Login, Dashboard, Room, etc.)
-│       ├── store/        # Zustand global state stores
-│       ├── hooks/        # Custom React hooks
-│       └── services/     # API client layer
-└── server/            # Node.js + Express backend
-    ├── config/          # DB & Passport configuration
-    ├── controllers/     # Business logic (auth, rooms, AI, media)
-    ├── middleware/      # Auth guard & error handling
-    ├── models/          # Mongoose schemas
-    ├── routes/          # Express route definitions
-    └── sockets/         # Socket.io & Yjs real‑time handlers
+│       ├── components/      # Canvas, Chat, Toolbar, AI Panel, etc.
+│       ├── pages/           # Login, Dashboard, Room, Register
+│       ├── store/           # Zustand global state
+│       ├── hooks/           # Custom React hooks
+│       └── services/        # API client layer
+│
+└── server/                  # Node.js + Express backend
+    ├── config/              # DB & Passport configuration
+    ├── controllers/         # Auth, Room, AI, Media logic
+    ├── middleware/          # Auth guards & error handling
+    ├── models/              # Mongoose schemas
+    ├── routes/              # Express route definitions
+    └── sockets/             # Socket.io & Yjs real-time handlers
 ```
 
----
-## 🗺️ Roadmap
-See [ROADMAP.md](https://arena.ai/c/ROADMAP.md) for planned features and milestones.
+<br/>
 
----
-## 📝 Changelog
-See [CHANGELOG.md](https://arena.ai/c/CHANGELOG.md) for a history of notable changes.
+## 🗺️ Roadmap & Changelog
 
----
+- 📍 See [**ROADMAP.md**](./ROADMAP.md) for upcoming features & milestones
+- 📝 See [**CHANGELOG.md**](./CHANGELOG.md) for version history
+- ✅ See [**TODO.md**](./TODO.md) for current priorities
+
+<br/>
+
 ## 📊 Project Status
-🚧 Actively developed MVP — core features are functional; deployment and polish are in progress. Check [TODO.md](https://arena.ai/c/TODO.md) for current priorities.
 
----
+🚧 **Actively developed MVP** — core features are fully functional. Deployment and polish in progress.
+
+<br/>
+
 ## 🤝 Contributing
-This is currently a solo‑developed project, built as a portfolio piece demonstrating full‑stack real‑time application architecture. Feedback and suggestions are welcome via Issues.
 
----
+This is a solo-developed portfolio project demonstrating full-stack real-time application architecture. Feedback, suggestions, and issue reports are always welcome!
+
+<br/>
+
 ## 📄 License
-This project is licensed under the MIT License.
 
----
+Licensed under the **MIT License**.
+
+<br/>
+
 ## 👤 Author
-**Ansh Babel**
-GitHub: [@AnshBabel](https://github.com/AnshBabel)
 
-⭐ If you find this project interesting, consider giving it a star!
----
+**Ansh Babel**
+
+[![GitHub](https://img.shields.io/badge/GitHub-AnshBabel-181717?style=flat-square&logo=github)](https://github.com/AnshBabel)
+
+<br/>
+
+<div align="center">
+
+### ⭐ If you find this project interesting, consider giving it a star!
+
+*Built with ❤️ using the MERN stack*
+
+</div>
