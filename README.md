@@ -237,6 +237,12 @@ CollabCanvas/
 
 <br/>
 
+## ⚠️ Known Issues
+
+- **Google OAuth on production** — login flow fix was just deployed but has not been fully verified end-to-end yet. Email/password login is confirmed working on the live site. Google Sign-In verification is in progress.
+
+- <br/>
+
 ## 🤝 Contributing
 
 This is a solo-developed portfolio project demonstrating full-stack real-time application architecture. Feedback, suggestions, and issue reports are always welcome!
