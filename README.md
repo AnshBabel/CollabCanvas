@@ -21,7 +21,7 @@
 
 <br/>
 
-**[🚀 Live Demo](#)** · **[📖 Documentation](#-getting-started)** · **[🐛 Report Bug](../../issues)** · **[✨ Request Feature](../../issues)**
+**[🚀 Live Demo](https://collabcanvas-kappa.vercel.app)** · **[📖 Documentation](#-getting-started)** · **[🐛 Report Bug](../../issues)** · **[✨ Request Feature](../../issues)**
 
 </div>
 
